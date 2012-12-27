@@ -1,29 +1,28 @@
 //
 //  BirdsAppDelegate.m
-//  birdWatching
+//  BirdWatching
 //
-//  Created by 湯　源遠 on 12/12/22.
-//  Copyright (c) 2012年 tyy. All rights reserved.
+//  Created by 株式会社 ガゼル on 2012/12/19.
+//  Copyright (c) 2012年 study. All rights reserved.
 //
 
 #import "BirdsAppDelegate.h"
-#import "BirdSightingController.h"
+
 #import "BirdsMasterViewController.h"
+#import "BirdSigntingDataController.h"
 
 @implementation BirdsAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    
     UINavigationController *navigationController = (UINavigationController *)self.window.rootViewController;
-    
     BirdsMasterViewController *firstViewController = (BirdsMasterViewController *)[[navigationController viewControllers] objectAtIndex:0];
-    
-    BirdSightingController *dataController = [[BirdSightingController alloc] init];
-    
-    firstViewController.dataController = dataController;
-    
-    // Override point for customization after application launch.
+    BirdSigntingDataController *aDataController =
+    [[BirdSigntingDataController alloc] init];
+    firstViewController.dataController = aDataController;
     return YES;
+    
 }
 							
 - (void)applicationWillResignActive:(UIApplication *)application

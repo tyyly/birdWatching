@@ -1,21 +1,21 @@
 //
 //  BirdsDetailViewController.h
-//  birdWatching
+//  BirdWatching
 //
-//  Created by 湯　源遠 on 12/12/22.
-//  Copyright (c) 2012年 tyy. All rights reserved.
+//  Created by 株式会社 ガゼル on 2012/12/19.
+//  Copyright (c) 2012年 study. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 
-@class BirdsSighting;
+@class BirdSignting;
 
 @interface BirdsDetailViewController : UITableViewController
 
-@property (strong, nonatomic) BirdsSighting *sighting;
-@property (weak, nonatomic) IBOutlet UILabel *birdNameLavel;
+@property (strong, nonatomic) BirdSignting *sighting;
+
+@property (weak, nonatomic) IBOutlet UILabel *nameLabel;
 @property (weak, nonatomic) IBOutlet UILabel *locationLabel;
 @property (weak, nonatomic) IBOutlet UILabel *dateLabel;
-
 
 @end

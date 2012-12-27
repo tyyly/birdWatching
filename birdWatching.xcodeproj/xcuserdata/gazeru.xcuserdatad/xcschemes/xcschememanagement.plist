@@ -4,7 +4,7 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>birdWatching.xcscheme</key>
+		<key>BirdWatching.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
@@ -12,7 +12,7 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>2AF564571684C3E40014C7BB</key>
+		<key>590FD4411681D86300FC886D</key>
 		<dict>
 			<key>primary</key>
 			<true/>

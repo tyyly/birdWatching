@@ -1,14 +1,13 @@
 //
 //  BirdsDetailViewController.m
-//  birdWatching
+//  BirdWatching
 //
-//  Created by 湯　源遠 on 12/12/22.
-//  Copyright (c) 2012年 tyy. All rights reserved.
+//  Created by 株式会社 ガゼル on 2012/12/19.
+//  Copyright (c) 2012年 study. All rights reserved.
 //
 
 #import "BirdsDetailViewController.h"
-
-#import "BirdsSighting.h"
+#import "BirdSignting.h"
 
 @interface BirdsDetailViewController ()
 - (void)configureView;
@@ -16,7 +15,8 @@
 
 @implementation BirdsDetailViewController
 
-@synthesize sighting = _sighting, birdNameLavel = _birdNameLavel, locationLabel = _locationLabel, dateLabel = _dateLabel;
+@synthesize nameLabel = _nameLabel, locationLabel = _locationLabel, dateLabel = _dateLabel;
+
 
 #pragma mark - Managing the detail item
 /*
@@ -29,36 +29,42 @@
         [self configureView];
     }
 }
- */
 
--(void) setSighting:(BirdsSighting *)newSighting{
-    if(_sighting!=newSighting){
+- (void)configureView
+{
+    // Update the user interface for the detail item.
+
+    if (self.detailItem) {
+        self.detailDescriptionLabel.text = [self.detailItem description];
+    }
+}
+*/
+
+- (void)setSighting:(BirdSignting *) newSighting
+{
+    if (_sighting != newSighting) {
         _sighting = newSighting;
-        
+        // ビューを更新する
         [self configureView];
     }
 }
 
 - (void)configureView
 {
-    
-    BirdsSighting *theSighting = self.sighting;
-    
+    // ユーザインターフェイスを詳細アイテム用に更新する
+    BirdSignting *theSighting = self.sighting;
     static NSDateFormatter *formatter = nil;
-    
-    if(formatter == nil){
+    if (formatter == nil) {
         formatter = [[NSDateFormatter alloc] init];
         [formatter setDateStyle:NSDateFormatterMediumStyle];
-        
     }
-    
-    if(theSighting){
-        self.birdNameLavel.text = theSighting.name;
+    if (theSighting) {
+        self.nameLabel.text = theSighting.name;
         self.locationLabel.text = theSighting.location;
         self.dateLabel.text = [formatter stringFromDate:(NSDate *)theSighting.date];
     }
-    
 }
+
 
 - (void)viewDidLoad
 {
@@ -67,7 +73,8 @@
     [self configureView];
 }
 
--(void)viewDidUnload{
+- (void)viewDidUnload
+{
     self.sighting = nil;
     [super viewDidUnload];
 }

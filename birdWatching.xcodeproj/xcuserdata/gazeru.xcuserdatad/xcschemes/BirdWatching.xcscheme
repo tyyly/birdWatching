@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "2AF564571684C3E40014C7BB"
-               BuildableName = "birdWatching.app"
-               BlueprintName = "birdWatching"
-               ReferencedContainer = "container:birdWatching.xcodeproj">
+               BlueprintIdentifier = "590FD4411681D86300FC886D"
+               BuildableName = "BirdWatching.app"
+               BlueprintName = "BirdWatching"
+               ReferencedContainer = "container:BirdWatching.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -32,10 +32,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "2AF564571684C3E40014C7BB"
-            BuildableName = "birdWatching.app"
-            BlueprintName = "birdWatching"
-            ReferencedContainer = "container:birdWatching.xcodeproj">
+            BlueprintIdentifier = "590FD4411681D86300FC886D"
+            BuildableName = "BirdWatching.app"
+            BlueprintName = "BirdWatching"
+            ReferencedContainer = "container:BirdWatching.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -51,10 +51,10 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "2AF564571684C3E40014C7BB"
-            BuildableName = "birdWatching.app"
-            BlueprintName = "birdWatching"
-            ReferencedContainer = "container:birdWatching.xcodeproj">
+            BlueprintIdentifier = "590FD4411681D86300FC886D"
+            BuildableName = "BirdWatching.app"
+            BlueprintName = "BirdWatching"
+            ReferencedContainer = "container:BirdWatching.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -69,10 +69,10 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "2AF564571684C3E40014C7BB"
-            BuildableName = "birdWatching.app"
-            BlueprintName = "birdWatching"
-            ReferencedContainer = "container:birdWatching.xcodeproj">
+            BlueprintIdentifier = "590FD4411681D86300FC886D"
+            BuildableName = "BirdWatching.app"
+            BlueprintName = "BirdWatching"
+            ReferencedContainer = "container:BirdWatching.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
